@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Cafe - Desktop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="cloud.png" alt="Cloud Cafe Logo" class="logo-img">
+                <h1 class="cafe-title">Cloud Cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Hoved side</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#">Profil</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-text">Handlekurv</span>
+                <span class="cart-count">(0)</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Velkommen til <span class="cafe-title">Cloud Cafe</span></h1>
+                <p>Delikate smaker, en koselig atmosfære og drikker laget med kjærlighet</p>
+                <a href="#" class="btn-primary">Se menyen <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                </div>
+        </div>
+    </section>
+
+    <main class="container main-content">
+        <section class="menu-section">
+            <h2>Menyen vår</h2>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active">Alt</button>
+                <button class="filter-btn">Kaffe</button>
+                <button class="filter-btn">Drikker</button>
+                <button class="filter-btn">Bakverk</button>
+                <button class="filter-btn">Desserter</button>
+                <button class="filter-btn">Frokost</button>
+            </div>
+
+            
+            <div class="menu-grid">
+
+                <div class="menu-item" data-id="4" data-name="Appelsinjus" data-price="40" data-category="drikker">
+                    <img src="appelsinjus.jpg" alt="Appelsinjus" class="item-img">
+                    <div class="item-details">
+                        <h3>Appelsinjus</h3>
+                        <p class="item-description">En forfriskende appelsinjus med frisk smak</p>
+                        <div class="item-footer">
+                            <span class="item-price">32 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="2" data-name="Berlinerbolle" data-price="23" data-category="bakverk">
+                    <img src="berlinerboller.png" alt="Berlinerbolle" class="item-img">
+                    <div class="item-details">
+                        <h3>Berlinerbolle</h3>
+                        <p class="item-description">Myk berlinerbolle med søtt fyll og sukker på toppen.</p>
+                        <div class="item-footer">
+                            <span class="item-price">23 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="4" data-name="Blåbær-ostekake" data-price="55" data-category="desserter">
+                    <img src="cheesecake.png" alt="Blåbær-ostekake" class="item-img">
+                    <div class="item-details">
+                        <h3>Blåbær-ostekake</h3>
+                        <p class="item-description">En delikat ostekake med blåbærsaus</p>
+                        <div class="item-footer">
+                            <span class="item-price">55 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="1" data-name="Cappuccino" data-price="50" data-category="kaffe">
+                    <img src="cappuccino.jpg" alt="Cappuccino" class="item-img">
+                    <div class="item-details">
+                        <h3>Cappuccino</h3>
+                        <p class="item-description">En klassisk cappuccino laget på espresso</p>
+                        <div class="item-footer">
+                            <span class="item-price">50 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="3" data-name="Croissant" data-price="25" data-category="bakverk">
+                    <img src="croissant.png" alt="Croissant" class="item-img">
+                    <div class="item-details">
+                        <h3>Croissant</h3>
+                        <p class="item-description">En luftig croissant med sprø skorpe</p>
+                        <div class="item-footer">
+                            <span class="item-price">25 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="1" data-name="Espresso" data-price="30" data-category="kaffe">
+                    <img src="espresso.jpg" alt="Espresso" class="item-img">
+                    <div class="item-details">
+                        <h3>Espresso</h3>
+                        <p class="item-description">En sterk og rik kaffe laget på kaffeboen</p>
+                        <div class="item-footer">
+                            <span class="item-price">30 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="4" data-name="Lemonad" data-price="40" data-category="drikker">
+                    <img src="grønnte.jpg" alt="Grønn te" class="item-img">
+                    <div class="item-details">
+                        <h3>Grønn te</h3>
+                        <p class="item-description">En varm grønn te.</p>
+                        <div class="item-footer">
+                            <span class="item-price">30 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="4" data-name="Kald bær-espresso" data-price="50" data-category="drikker">
+                    <img src="iskaffe.png" alt="Kald bær-espresso" class="item-img">
+                    <div class="item-details">
+                        <h3>Kald bær-espresso</h3>
+                        <p class="item-description">En forfriskende espresso med bærsmak.</p>
+                        <div class="item-footer">
+                            <span class="item-price">50 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                 
+
+                <div class="menu-item" data-id="3" data-name="Kanelknute med eplefyll" data-price="38" data-category="bakverk">
+                    <img src="kanelknute.png" alt="Kanelknute" class="item-img">
+                    <div class="item-details">
+                        <h3>Kanelknute med eplefyll</h3>
+                        <p class="item-description">Luftig kanelknute fylt med søt eplefyll.</p>
+                        <div class="item-footer">
+                            <span class="item-price">38 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="4" data-name="Kokosbolle" data-price="19" data-category="desserter">
+                    <img src="kokosbolle.jpg" alt="Kokosbolle" class="item-img">
+                    <div class="item-details">
+                        <h3>Kokosbolle</h3>
+                        <p class="item-description">Søt smak og myk konsistens</p>
+                        <div class="item-footer">
+                            <span class="item-price">19 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="4" data-name="Lemonad" data-price="40" data-category="drikker">
+                    <img src="lemonad.jpg" alt="Lemonad" class="item-img">
+                    <div class="item-details">
+                        <h3>Lemonad</h3>
+                        <p class="item-description">En forfriskende lemonad med frisk smak</p>
+                        <div class="item-footer">
+                            <span class="item-price">40 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="1" data-name="Latté" data-price="50" data-category="kaffe">
+                    <img src="latte.jpg" alt="Latté" class="item-img">
+                    <div class="item-details">
+                        <h3>Latté</h3>
+                        <p class="item-description">En klassisk latté laget på espresso</p>
+                        <div class="item-footer">
+                            <span class="item-price">50 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="4" data-name="Matcha" data-price="30" data-category="drikker">
+                    <img src="matcha.jpg" alt="Matcha" class="item-img">
+                    <div class="item-details">
+                        <h3>Matcha</h3>
+                        <p class="item-description">En forfriskende matcha med frisk og lett bitter smak</p>
+                        <div class="item-footer">
+                            <span class="item-price">59 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="6" data-name="Milkshake" data-price="55" data-category="drikker">
+                    <img src="milkshake.png" alt="Milkshake" class="item-img">
+                    <div class="item-details">
+                        <h3>Milkshake</h3>
+                        <p class="item-description">En mild sjokolademilkshake</p>
+                        <div class="item-footer">
+                            <span class="item-price">55 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="5" data-name="Mojito" data-price="40" data-category="drikker">
+                    <img src="mojito.png" alt="Mojito" class="item-img">
+                    <div class="item-details">
+                        <h3>Mojito</h3>
+                        <p class="item-description">En forfriskende mojito</p>
+                        <div class="item-footer">
+                            <span class="item-price">40 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="3" data-name="Muffin" data-price="32" data-category="bakverk">
+                    <img src="muffin.jpg" alt="Muffin" class="item-img">
+                    <div class="item-details">
+                        <h3>Muffin</h3>
+                        <p class="item-description">Myk sjokolademuffin med rik smak av kakao</p>
+                        <div class="item-footer">
+                            <span class="item-price">32 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="4" data-name="Tiramisu" data-price="55" data-category="desserter">
+                    <img src="tiramisu.jpg" alt="Tiramisu" class="item-img">
+                    <div class="item-details">
+                        <h3>Tiramisu</h3>
+                        <p class="item-description">En delikat tiramisu med rik kakaosmak</p>
+                        <div class="item-footer">
+                            <span class="item-price">55 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="4" data-name="Svart te" data-price="30" data-category="drikker">
+                    <img src="svartte.jpg" alt="Svart te" class="item-img">
+                    <div class="item-details">
+                        <h3>Svart te</h3>
+                        <p class="item-description">En varm svart te.</p>
+                        <div class="item-footer">
+                            <span class="item-price">30 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-id="7" data-name="Varm sjokolade" data-price="55" data-category="drikker">
+                    <img src="varmsjokolade.jpg" alt="Varm sjokolade" class="item-img">
+                    <div class="item-details">
+                        <h3>Varm sjokolade</h3>
+                        <p class="item-description">Fyldig varm sjokolade med rik kakaosmak.</p>
+                        <div class="item-footer">
+                            <span class="item-price">55 kr</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <aside class="cart-section">
+            <div class="cart-header">
+                <h3>Bestillingen din</h3>
+                <button class="clear-cart-btn"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item" data-id="1">
+                    </div>
+                        
+                </div>
+                
+                </div>
+
+            <div class="cart-footer">
+                <div class="total-price">
+                    <span>Totalt</span>
+                    <span class="total-amount">0 kr</span>
+                </div>
+                <button class="btn-checkout">Gå til betaling</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Om oss</a>
+                <a href="#">Gavekort</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontakt oss</h4>
+                <p><i class="fas fa-phone"></i> +478823498</p>
+                <p><i class="fas fa-envelope"></i> @cloudcafe.no</p>
+            </div>
+            <div class="footer-location">
+                <h4>Sted</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bragernes Torg 28, 3025 Drammen</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
